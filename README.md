@@ -1,6 +1,6 @@
 # Docker Practice: Nginx and Redis with Docker Compose
 
-This is a simple project to learn how to use **Docker Compose** to run multiple containers together. I built this infrastructure on **Zorin OS** using my **Asus TUF A15** laptop. It includes a web server, a database, and a management tool.
+This is a simple project to learn how to use **Docker Compose** to run multiple containers together. It includes a web server, a database, and a management tool.
 
 ---
 
