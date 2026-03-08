@@ -1,0 +1,25 @@
+services:
+  web-sunucum:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+  veritabanim:
+    image: redis:alpine
+    volumes:
+      - ./redis-data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+  redis-arayuzu:
+    image: rediscommander/redis-commander:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:veritabanim:6379

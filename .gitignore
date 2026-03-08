@@ -1,0 +1,5 @@
+
+redis-data/
+.DS_Store
+thumbs.db
+*.log
